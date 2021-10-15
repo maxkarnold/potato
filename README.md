@@ -23,14 +23,14 @@ potato
 │   node_modules
 │   ...  
 └───src
-│   │   index.html
-│   │   ...
-│   └───app
-│   └───assets
-│   └───...
-│   └───environments
-│       │   environment.ts
-│       │   environment.prod.ts
+    │   index.html
+    │   ...
+    └───app
+    └───assets
+    └───...
+    └───environments
+        │   environment.ts
+        │   environment.prod.ts
 
 ```
 Inside the `src/environments` contains the `environment.ts` and `environment.prod.ts` which has the `secretEmail` string and the `firebaseConfig` object. Go ahead and copy and paste the firebaseConfig from the firebase console -> potato -> project settings then scroll to the bottom. 
