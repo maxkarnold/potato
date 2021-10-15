@@ -1,27 +1,91 @@
-# Potato
+# Potato's Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
+Website URLs: https://potato-the-shihtzu.firebaseapp.com/ or https://potato-the-shihtzu.web.app/
 
-## Development server
+## Setup
+Install the Angular CLI globally.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```bash
+npm install -g @angular/cli
+```
 
-## Code scaffolding
+Start off by installing the node_modules required.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+npm i
+```
 
-## Build
+The file structure is:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+potato
+│   README.md
+│   node_modules
+│   ...  
+└───src
+│   │   index.html
+│   │   ...
+│   └───app
+│   └───assets
+│   └───...
+│   └───environments
+│       │   environment.ts
+│       │   environment.prod.ts
 
-## Running unit tests
+```
+Inside the `src/environments` contains the `environment.ts` and `environment.prod.ts` which has the `secretEmail` string and the `firebaseConfig` object. Go ahead and copy and paste the firebaseConfig from the firebase console -> potato -> project settings then scroll to the bottom. 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+`environment.ts`
 
-## Running end-to-end tests
+```javascript
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+// This file can be replaced during build by using the `fileReplacements` array.
+// `ng build` replaces `environment.ts` with `environment.prod.ts`.
+// The list of file replacements can be found in `angular.json`.
 
-## Further help
+export const environment = {
+  production: false,
+  secretEmail: 'meganjlin99@gmail.com',
+  firebaseConfig: {
+    apiKey: "API_KEY",
+    authDomain: "AUTH_DOMAIN",
+    projectId: "PROJECT_ID",
+    storageBucket: "STORAGE_BUCKET",
+    messagingSenderId: "MESSAGING_SENDER_ID",
+    appId: "APP_ID",
+    measurementId: "MEASUREMENT_ID"
+  }
+};
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+/*
+ * For easier debugging in development mode, you can import the following file
+ * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
+ *
+ * This import should be commented out in production mode because it will have a negative impact
+ * on performance if an error is thrown.
+ */
+// import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
+
+```
+
+`environment.prod.ts`
+
+```javascript
+
+export const environment = {
+  production: true,
+  secretEmail: 'meganjlin99@gmail.com',
+  firebaseConfig: {
+    apiKey: "API_KEY",
+    authDomain: "AUTH_DOMAIN",
+    projectId: "PROJECT_ID",
+    storageBucket: "STORAGE_BUCKET",
+    messagingSenderId: "MESSAGING_SENDER_ID",
+    appId: "APP_ID",
+    measurementId: "MEASUREMENT_ID"
+  }
+};
+```
+
+
+
