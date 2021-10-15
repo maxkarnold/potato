@@ -1,0 +1,187 @@
+/* Dog Log specific CSS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+}
+
+body {
+	background: -webkit-linear-gradient(120deg, #ffe5d9, #aee7e8);
+	background: linear-gradient(120deg, #ffe5d9, #aee7e8);
+}
+
+main {
+	padding-bottom: 59px;
+}
+
+/* GRID layout for dog log */
+@media screen and (min-width: 1024px) {
+	main {
+		display: grid;
+		grid-template-rows: auto 1fr;
+		grid-template-columns: 600px 3fr;
+	}
+
+	.log_container {
+		grid-column-start: 2;
+	}
+
+	.filter {
+		grid-column-start: 2;
+	}
+
+	form {
+		grid-row-start: span 2;
+	}
+
+	footer {
+		margin-top: 4rem;
+	}
+
+	.log_container {
+		margin-top: 3rem;
+	}
+}
+
+/* Header/Nav */
+
+header {
+	padding: 0 0 0 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+nav {
+	padding: 0;
+}
+
+nav ul {
+	background: #ffe5d9;
+}
+
+.nav_button svg {
+	width: 6rem;
+	height: 6rem;
+}
+
+/* Dog Log Enter Info Styling */
+form {
+	width: 80%;
+	margin: 3rem auto;
+	display: flex;
+	flex-flow: column;
+}
+
+form * {
+	color: #40514e;
+}
+
+.log_form input,
+.log_form select,
+.log_form button {
+	font-size: 1.5rem;
+	border: none;
+	border-radius: 5px;
+	margin: 0.5rem auto;
+	padding: 5px;
+	background: white;
+	width: 90%;
+}
+
+.log_form button {
+	color: #40514e;
+	background: white;
+	transition: all 0.3s ease;
+}
+
+.log_form button:hover {
+	background: #59c0c2;
+	color: white;
+	cursor: pointer;
+}
+
+/* Dog Log List Styling */
+
+.log_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 150px;
+}
+
+.log_list {
+	min-width: 75%;
+	list-style: none;
+}
+
+/* Individual list entries and items */
+
+.log_entry {
+	margin: 0.5rem;
+	border-radius: 10px;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: center;
+	/* align-items: stretch; */
+	transition: all 1s ease;
+}
+
+.log_entry li {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	border-radius: 10px;
+	text-transform: capitalize;
+	margin-right: 1px;
+	padding: 0rem 1rem;
+}
+
+.log_entry li:nth-last-child(2) {
+	border-right: none;
+}
+
+/* Trash button */
+
+.trash_btn {
+	background: #59c0c2;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	padding: 1rem;
+	cursor: pointer;
+	font-size: 1rem;
+	align-self: stretch;
+	transition: 0.3s all ease;
+}
+
+.trash_btn:hover {
+	background: white;
+	color: #59c0c2;
+}
+
+.fa-trash,
+.fa-check {
+	pointer-events: none;
+}
+
+.fall {
+	transform: translateY(8rem) rotateZ(20deg);
+	opacity: 0;
+}
+
+/* Select Tag */
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	background: white;
+}

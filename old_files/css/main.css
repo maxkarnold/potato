@@ -1,0 +1,536 @@
+@font-face {
+	font-family: "Plavea Solid";
+	src: url("../fonts/plavea/PlaveaSolid-Yzyjj.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Plavea Shine";
+	src: url("../fonts/plavea/PlaveaShine-8M4XD.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "basic-font";
+	src: url("../fonts/MessyHandwritten-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Adeline";
+	src: url("../fonts/Adeline.ttf") format("truetype");
+}
+
+/* Color Palette #D8E2DC#FFE5D9#FFCAD4#F4ACB7#9D8189 */
+/* Alternate Colors #3D4D4B#aee7e8#59c0c2#00a79d#99b898#feceab#ff847c#e84a5f */
+/* ### ELEMENT STYLES ### */
+body {
+	margin: 0;
+	font-family: "basic-font", serif;
+	font-size: 100%;
+	width: 100%;
+	text-align: center;
+	line-height: 1.5;
+	background: #f5f5f5;
+	color: #40514e;
+}
+
+h1 {
+	font-family: "Adeline", cursive;
+	color: #91a6ff;
+	font-size: 5.25rem;
+	margin: 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #99b898;
+	font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+	font-size: 3.5rem;
+	font-family: "Plavea Shine", "Plavea Solid", sans-serif;
+	font-weight: lighter;
+}
+
+p {
+	font-size: 2rem;
+}
+
+li.box {
+	font-size: 1.5rem;
+}
+
+table tr td:first-of-type {
+	font-size: 1.25rem;
+}
+
+header {
+	background: #ffe5d9;
+	margin: 0;
+	padding: 3rem 0 0;
+}
+
+header h2 {
+	margin: 2rem 1rem 0;
+}
+
+section {
+	margin-top: 100px;
+}
+
+section:first-of-type {
+	margin-top: 0;
+}
+
+section p {
+	width: 70%;
+	margin: 25px auto;
+	line-height: 2;
+}
+
+hr {
+	border: dotted 6px #d8e2dc;
+	border-bottom: none;
+	width: 5%;
+	margin: 100px auto;
+}
+
+footer {
+	background: #ffe5d9;
+	font-family: "Montserrat", sans-serif;
+	padding: 10px 0 10px;
+}
+
+footer img {
+	width: 18px;
+	margin-right: 5px;
+	vertical-align: middle;
+	position: relative;
+	bottom: 2px;
+}
+
+footer a,
+footer a:visited {
+	text-decoration: none;
+	color: #40514e;
+}
+footer a:hover {
+	color: #40514ea9;
+}
+
+footer div {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: column wrap;
+	margin: 20px auto 10px;
+	padding: 0;
+}
+footer div p {
+	margin: 0;
+	font-size: 0.5rem;
+}
+
+/* ### CLASS STYLES ### */
+
+.gif {
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	top: 15px;
+}
+
+.pro {
+	border-radius: 100%;
+	width: 300px;
+}
+
+.header_img {
+	position: relative;
+	top: 29px;
+	margin-bottom: 6px;
+}
+
+/* --- Navigation --- */
+
+nav {
+	display: flex;
+	flex-flow: column;
+	padding: 10px;
+}
+
+nav ul {
+	display: flex;
+	visibility: hidden;
+	height: 0px;
+	flex-flow: column;
+	margin: 0 0 35px;
+	padding: 0;
+	width: 100%;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	overflow: hidden;
+}
+
+.nav_trans {
+	height: 192px;
+	visibility: visible;
+}
+
+nav ul li {
+	display: block;
+}
+
+nav ul li a {
+	font-size: 2rem;
+	font-family: "Plavea Shine";
+	color: #99b898;
+	text-decoration: none;
+}
+
+/* Placeholder Link Styling */
+.placeholder_link {
+	text-decoration: line-through;
+}
+/* Hamburger Menu */
+
+nav div {
+	align-self: flex-end;
+}
+.nav_button svg {
+	width: 4rem;
+	height: 4rem;
+}
+.nav_button svg:hover {
+	cursor: pointer;
+}
+
+.nav_button svg:hover .bg_circle {
+	fill: #ffe5d9;
+}
+
+/* Media Queries for NAV */
+
+@media screen and (min-width: 768px) {
+	nav {
+		flex-flow: row-reverse;
+		height: 7.5rem;
+	}
+
+	nav ul {
+		flex-flow: row;
+		justify-content: space-evenly;
+		height: 7.5rem;
+		visibility: visible;
+	}
+
+	.nav_trans {
+		width: 100%;
+		height: inherit;
+	}
+
+	nav ul li {
+		display: flex;
+		align-self: center;
+	}
+
+	nav ul li a {
+		font-size: 3rem;
+	}
+
+	.nav_button svg {
+		width: 7.5rem;
+		height: 7.5rem;
+	}
+
+	.nav_button {
+		display: none;
+	}
+}
+
+/* --- Authentication --- */
+
+.auth {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+	.auth {
+		margin-top: 25px;
+	}
+}
+
+.auth button {
+	cursor: pointer;
+	color: #40514e;
+	background: white;
+	transition: all 0.3s ease;
+	font-size: 1.5rem;
+	border: none;
+	border-radius: 5px;
+	margin: 0.5rem auto;
+	padding: 7.5px;
+}
+
+.auth button:hover {
+	background: #59c0c2;
+	color: white;
+	transition: all 0.3s ease;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	top: 10%;
+	left: 15vw;
+	right: 15vw;
+	margin: 0 auto;
+	width: 80vw;
+	max-width: 500px;
+	background-color: #99b898;
+	z-index: 1;
+}
+
+.modal form {
+	margin-top: 0;
+}
+
+.modal form button,
+.modal form input {
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+	margin: auto;
+	width: 90%;
+}
+
+.modal form label {
+	font-size: 1.2rem;
+}
+
+.modal form input {
+	margin-bottom: 25px;
+	font-size: 0.8rem;
+}
+
+.modal form button {
+	font-size: 1.2rem;
+	cursor: pointer;
+	background: white;
+	color: #40514e;
+	border: none;
+	width: 90%;
+	transition: 0.3s all ease;
+}
+
+.modal form button:hover {
+	background-color: #59c0c2;
+	color: white;
+	transition: all 0.3s ease;
+}
+
+.close_container {
+	display: flex;
+	justify-content: flex-end;
+}
+.close_modal {
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 4rem;
+	position: relative;
+	bottom: 20px;
+	transition: all 0.3s ease;
+}
+
+.close_modal:hover {
+	/* color: #ffe5d9;
+	color: white; */
+	color: #f5f5f5;
+}
+
+.close_modal:focus {
+	outline: none;
+}
+
+.blurred {
+	-webkit-filter: blur(2px);
+	filter: blur(2px);
+}
+
+/* Default modal visibility is hidden */
+
+.visible {
+	display: block;
+}
+
+/* --- Skills Section --- */
+
+.skills table {
+	margin: 50px 25px;
+	text-align: left;
+	border-collapse: collapse;
+}
+
+.skills tr td:first-of-type {
+	text-align: left;
+}
+
+/* Styling of the stars */
+.skills tr td:last-of-type {
+	color: #d8e2dc;
+	letter-spacing: 0.2rem;
+	text-align: right;
+}
+/* Styling of the stars filled in */
+.skills tr td .star {
+	color: #f4acb7;
+	-webkit-transition: letter-spacing 0.5s;
+	transition: letter-spacing 0.5s;
+}
+
+/* Hover over the row to see the background*/
+
+.skills tr:hover {
+	background: #eff1f0;
+}
+/* Transitions to larger letter spacing */
+.skills tr:hover td:last-of-type span {
+	letter-spacing: 0.4rem;
+	-webkit-transition: letter-spacing 0.5s;
+	transition: letter-spacing 0.5s;
+}
+
+.skills tr td {
+	width: 100%;
+}
+/* The skills <hr> is used as a top/bottom border */
+.skills hr {
+	border: solid 1px #40514e;
+	width: 100%;
+	margin: 50px auto;
+}
+
+@media screen and (min-width: 600px) {
+	.skills table {
+		width: calc(400px - 2.5vw);
+		margin: auto;
+	}
+}
+
+/* --- Daily Life Section --- */
+
+.daily_life {
+	margin: 0 2.5vw 100px;
+}
+/* Timeline background */
+.daily_life > div {
+	/* background: url(../img/icons/png/001-moon.png), url(../img/icons/png/002-sunny.png), #99b898; */
+	/* background: url(../img/icons/svg/001-moon.svg) right/30% no-repeat, url(../img/icons/svg/002-sunny.svg) left/30% no-repeat, #99b898; */
+	background-color: #99b898;
+	background-blend-mode: screen;
+	width: 100%;
+}
+/* Grid of the timeline */
+.daily_life ul {
+	display: grid;
+	grid-template-rows: 5fr 1fr 5fr;
+	grid-template-columns: auto;
+	overflow: auto;
+	margin: 0;
+	padding: 25px;
+	row-gap: 25px;
+	column-gap: 25px;
+	height: 80vh;
+	list-style-type: none;
+}
+
+/* Event box */
+
+.daily_life .box {
+	width: 350px;
+	text-align: left;
+}
+
+/* Placing the events top and bottom alternating */
+
+.daily_life .box:nth-of-type(odd) {
+	grid-row-start: 1;
+}
+
+.daily_life .box:nth-of-type(even) {
+	grid-row-start: 3;
+}
+
+/* Placement of all the events other than the first */
+
+.daily_life .box2 {
+	grid-column-start: 2;
+}
+.daily_life .box3 {
+	grid-column-start: 3;
+}
+.daily_life .box4 {
+	grid-column-start: 4;
+}
+.daily_life .box5 {
+	grid-column-start: 5;
+}
+.daily_life .box6 {
+	grid-column-start: 6;
+}
+.daily_life .box7 {
+	grid-column-start: 7;
+}
+
+/* Line in the middle */
+
+.daily_life hr {
+	grid-row-start: 2;
+	grid-column: 1 / 10;
+	width: 100%;
+	border: solid 1px #40514e;
+	height: 0;
+	margin: 0;
+	align-self: center;
+}
+
+.daily_life h3 {
+	margin: 0;
+	color: #3d4d4b;
+	font-family: "Plavea Shine", "Plavea Solid", sans-serif;
+	font-weight: lighter;
+}
+
+/* --- Gallery Section --- */
+
+section.gallery {
+	display: flex;
+	flex-flow: column wrap;
+	margin: 0 2.5vw 100px;
+	gap: 40px;
+}
+
+@media screen and (min-width: 600px) {
+	section.gallery {
+		flex-flow: row wrap;
+		gap: 5px;
+	}
+}
+
+.gallery .container {
+	background: #99b898;
+	width: 400px;
+	padding: 2.5px;
+}
+
+.gallery img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+/* Other Page Styling */
