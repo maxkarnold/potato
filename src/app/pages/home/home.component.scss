@@ -1,0 +1,57 @@
+.gif {
+  display: block;
+  width: min(80vw, 550px);
+}
+
+header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #D4EEE3;
+  margin: 0;
+  height: 92vh;
+}
+
+.header_container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  min-height: 300px;
+  h1 {
+    font-size: clamp(5rem, 10vw, 125px);
+    @media screen and (min-width: 600px) {
+      font-size: min(12vw, 125px);
+    }
+  }
+  h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+    @media screen and (min-width: 600px) {
+      font-size: min(6vw, 70px);
+    }
+  }
+}
+
+.section p {
+  width: 70%;
+  margin: 1rem auto;
+  line-height: 2;
+}
+
+.pro {
+  border-radius: 100%;
+  width: min(40vw, 300px);
+}
+
+h2 {
+  margin: 0;
+}
+
+h4 {
+  margin: 1rem;
+}
+
+
+

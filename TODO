@@ -1,1 +1,34 @@
+# TODO
 
+## PRIORITIES
+
+- refactor site to Angular App
+- fix dog log
+  - each log entry needs to be changed, box shapes suck, remove boxes maybe
+  - buttons for each activity type with tooltip (no actual text)
+  - form should just be emoji buttons, no time/date/comment/+, just buttons
+  - log entries are the same, no text just emoji with tooltip
+  - add a edit button as well as the delete button to the entries
+  - after a week has passed, the entries delete themselves
+- make potato's birthday change to be accurate(change birthday on refresh)
+- make pictures easy to upload
+- change login to be a 4 digit pin, prompt with number pad for input
+- admin login for specific things like uploading photos
+- timeline change to a gallery scroll that also has pictures/animations of Potato
+- hamburger menu doesn't work, only works on home page
+
+## SECONDARY
+
+- change copyright from "max arnold" to "m&m web development"
+- reorganize gallery look
+- Progressive Web App
+- Nav bar at top which will be skinny
+- When scrolling down nav bar disappears and when scrolling up it appears
+- change font of "my name is potato" to:
+- remove instagram link
+- page scrolling animation (like flipping through book but up to down)
+- Each section should take up full viewport height (100vh)
+
+## FUTURE PLANS
+
+- Another page for instructions
