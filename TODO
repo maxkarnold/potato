@@ -15,19 +15,14 @@
 - change login to be a 4 digit pin, prompt with number pad for input
 - admin login for specific things like uploading photos
 - timeline change to a gallery scroll that also has pictures/animations of Potato
-- hamburger menu doesn't work, only works on home page
 
 ## SECONDARY
 
-- change copyright from "max arnold" to "m&m web development"
 - reorganize gallery look
 - Progressive Web App
-- Nav bar at top which will be skinny
 - When scrolling down nav bar disappears and when scrolling up it appears
 - change font of "my name is potato" to:
-- remove instagram link
 - page scrolling animation (like flipping through book but up to down)
-- Each section should take up full viewport height (100vh)
 
 ## FUTURE PLANS
 

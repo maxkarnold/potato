@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -21,7 +22,7 @@ export class NavbarComponent implements OnInit {
 
   isMobile = true;
   isHidden = true;
-  constructor() {
+  constructor(private route: ActivatedRoute) {
     this.onResize();
    }
 
