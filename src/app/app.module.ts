@@ -7,6 +7,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SectionComponent } from './section/section.component';
 import { BioComponent } from './pages/bio/bio.component';
+import { GalleryComponent } from './pages/gallery/gallery.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { BioComponent } from './pages/bio/bio.component';
     NavbarComponent,
     SectionComponent,
     BioComponent,
+    GalleryComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

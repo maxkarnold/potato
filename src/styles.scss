@@ -16,6 +16,11 @@
 }
 
 @font-face {
+  font-family: "messy";
+  src: local("messy"), url("./assets/fonts/MessyHandwritten-Regular.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "Adeline";
   src: local("Adeline"), url("./assets/fonts/Adeline.ttf") format("truetype");
 }
