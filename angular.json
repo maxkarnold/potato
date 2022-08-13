@@ -107,5 +107,8 @@
       }
     }
   },
-  "defaultProject": "potato"
+  "defaultProject": "potato",
+  "cli": {
+    "analytics": "2106b5ef-c824-486d-b854-3b36f7b907f2"
+  }
 }
