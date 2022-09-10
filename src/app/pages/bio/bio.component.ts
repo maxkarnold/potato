@@ -12,7 +12,6 @@ export class BioComponent implements OnInit {
 
   ngOnInit(): void {
     this.calcAge()
-    console.log(this.age)
   }
 
   calcAge() {

@@ -2,9 +2,9 @@
   <nav>
     <ul [ngClass]="isHidden ? 'hidden' : 'nav-links'">
       <a routerLink="/bio" routerLinkActive="active">Bio</a>
-      <a href="">Log</a>
+      <a routerLink="/log" routerLinkActive="active">Log</a>
       <a href="/gallery" routerLinkActive="active">Gallery</a>
-      <a href="">Instructions</a>
+      <a routerLink="/instructions" routerLinkActive="active">Instructions</a>
     </ul>
     <div class="nav-icons">
       <a class="site-logo" routerLink="/" routerLinkActive="active">
@@ -34,6 +34,6 @@
         </svg>
       </div>
     </div>
-    
+
   </nav>
 </div>

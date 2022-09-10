@@ -37,6 +37,7 @@
 
 /* ### ELEMENT STYLES ### */
 body {
+  padding: 0;
   margin: 0;
   font-family: "basic-font", serif;
   font-size: 100%;
@@ -332,7 +333,7 @@ footer div p {
 .daily_life .box {
   display: flex;
   flex-flow: column;
-  justify-content: flex-end;
+  height: 60%;
   background-color: #99b898;
   border: solid black 1px;
   border-radius: 20px;

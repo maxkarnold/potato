@@ -9,6 +9,10 @@ import { SectionComponent } from './section/section.component';
 import { BioComponent } from './pages/bio/bio.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
+import { LogComponent } from './pages/log/log.component';
+import { InstructionsComponent } from './pages/instructions/instructions.component';
+
+import { TooltipModule } from '@cloudfactorydk/ng2-tooltip-directive';
 
 @NgModule({
   declarations: [
@@ -19,10 +23,13 @@ import { FooterComponent } from './footer/footer.component';
     BioComponent,
     GalleryComponent,
     FooterComponent,
+    LogComponent,
+    InstructionsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
