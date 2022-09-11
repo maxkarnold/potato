@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "potato-website"
+  },
+  "targets": {
+    "potato-website": {
+      "hosting": {
+        "shihtzu": [
+          "potato-the-shihtzu"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

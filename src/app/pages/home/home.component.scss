@@ -8,9 +8,10 @@ header {
   flex-flow: column;
   align-items: center;
   justify-content: space-between;
-  background: #D4EEE3;
+  background: #d4eee3;
   margin: 0;
   height: 92vh;
+  height: calc(var(--vh, 1vh) * 92);
 }
 
 .header_container {

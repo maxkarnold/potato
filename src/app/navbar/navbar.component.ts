@@ -4,7 +4,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
   screenWidth: any;
@@ -24,14 +24,13 @@ export class NavbarComponent implements OnInit {
   isHidden = true;
   constructor(private route: ActivatedRoute) {
     this.onResize();
-   }
-
-  ngOnInit(): void {
   }
+
+  ngOnInit(): void {}
 
   toggleNav() {
     if (this.isMobile) {
-      this.isHidden = this.isHidden ? false : true; 
+      this.isHidden = !this.isHidden;
     }
   }
 }

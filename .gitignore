@@ -48,3 +48,4 @@ Thumbs.db
 # Custom
 environment.prod.ts
 environment.ts
+*.cache

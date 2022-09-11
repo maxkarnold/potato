@@ -2,22 +2,26 @@
 
 @font-face {
   font-family: "Plavea Solid";
-  src: local("Plavea Solid"), url("./assets/fonts/plavea/PlaveaSolid-Yzyjj.ttf") format("truetype");
+  src: local("Plavea Solid"),
+    url("./assets/fonts/plavea/PlaveaSolid-Yzyjj.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Plavea Shine";
-  src: local("Plavea Shine"), url("./assets/fonts/plavea/PlaveaShine-8M4XD.otf") format("opentype");
+  src: local("Plavea Shine"),
+    url("./assets/fonts/plavea/PlaveaShine-8M4XD.otf") format("opentype");
 }
 
 @font-face {
   font-family: "basic-font";
-  src: local("basic-font"), url("./assets/fonts/BasicFontRegular-GOOlD.ttf") format("truetype");
+  src: local("basic-font"),
+    url("./assets/fonts/BasicFontRegular-GOOlD.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "messy";
-  src: local("messy"), url("./assets/fonts/MessyHandwritten-Regular.ttf") format("truetype");
+  src: local("messy"),
+    url("./assets/fonts/MessyHandwritten-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -31,7 +35,9 @@
 // NEW COLORS
 // #D4EEE3#FAFCFB#FCF3F0#E5EBD7#F7D7D7#F6E8DE
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -84,12 +90,12 @@ table tr td:first-of-type {
 
 footer {
   background: #ffe5d9;
-  font-family: "Montserrat", sans-serif;
-  padding: 10px 0 10px;
+  font-family: "Plavea Shine";
+  padding: 0.5px 0 1px;
 }
 
 footer img {
-  width: 18px;
+  width: 20px;
   margin-right: 5px;
   vertical-align: middle;
   position: relative;
@@ -110,16 +116,14 @@ footer div {
   display: flex;
   justify-content: space-around;
   flex-flow: column wrap;
-  margin: 20px auto 10px;
+  margin: 10px auto 10px;
   padding: 0;
 }
 
 footer div p {
   margin: 0;
-  font-size: 0.5rem;
+  font-size: 0.75rem;
 }
-
-
 
 /* --- Authentication --- */
 
@@ -316,10 +320,7 @@ footer div p {
 /* Grid of the timeline */
 .daily_life ul {
   display: flex;
-  // display: grid;
-  // grid-template-rows: 5fr 1fr;
-  // grid-template-columns: auto;
-  overflow: auto;
+  overflow-x: scroll;
   margin: 0;
   padding: 25px;
   row-gap: 25px;
@@ -346,7 +347,6 @@ footer div p {
 
 .daily_life .box h3 {
   text-align: center;
-
 }
 
 /* Placing the events top and bottom alternating */

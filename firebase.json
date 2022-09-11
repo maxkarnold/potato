@@ -1,0 +1,11 @@
+{
+  "hosting": [{
+    "target": "shihtzu",
+    "public": "dist/potato",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }]
+}
