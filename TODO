@@ -10,11 +10,11 @@
   - log entries are the same, no text just emoji with tooltip
   - add a edit button as well as the delete button to the entries
   - after a week has passed, the entries delete themselves
-- make potato's birthday change to be accurate(change birthday on refresh)
+- [x] make potato's birthday change to be accurate(change birthday on refresh)
 - make pictures easy to upload
 - change login to be a 4 digit pin, prompt with number pad for input
 - admin login for specific things like uploading photos
-- timeline change to a gallery scroll that also has pictures/animations of Potato
+- timeline change to a gallery scroll that also has pictures/animations of Potato as background
 
 ## SECONDARY
 
