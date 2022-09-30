@@ -1,7 +1,13 @@
-<h1>Log</h1>
 <main>
+  <h1>Log</h1>
   <form class="log_form">
-    <button *ngFor="let activity of activities" [tooltip]="activity.tooltip" [options]="tooltipOptions" >{{activity.text}}</button>
+    <button
+      *ngFor="let activity of activities"
+      [tooltip]="activity.tooltip"
+      [options]="tooltipOptions"
+    >
+      {{ activity.text }}
+    </button>
   </form>
 
   <div class="log_container">
