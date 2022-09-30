@@ -39,6 +39,8 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* ### ELEMENT STYLES ### */
@@ -59,6 +61,10 @@ h1 {
   color: #91a6ff;
   font-size: 5.25rem;
   margin: 0;
+}
+
+main {
+  min-height: 92vh;
 }
 
 h2,
@@ -337,13 +343,14 @@ footer div p {
   // min-height: 100%;
   // height: 100%;
   background-color: #99b898;
-  border: solid black 1px;
-  border-radius: 20px;
+  border: solid #889d88 3px;
+  border-radius: 25px;
   padding: 10px;
   min-width: 350px;
   margin-right: 10px;
   text-align: justify;
   font-size: 2rem;
+  height: 350px;
 }
 
 .daily_life .box h3 {
